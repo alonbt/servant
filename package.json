@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "clean": "rimraf dist/*",
-    "copy": "copyfiles -f ./src/index.html ./src/popup.html ./src/manifest.json ./src/icon.png ./src/favicon.ico ./dist",
+    "copy": "copyfiles -f ./src/index.html ./src/popup.html ./src/manifest.json ./src/icon.png ./src/documentStartScripts.js ./src/eventPage.js ./src/backgroundPage.js ./src/favicon.ico ./dist",
     "dist": "npm run copy & webpack --env=dist",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
@@ -62,11 +62,13 @@
   },
   "dependencies": {
     "core-js": "^2.0.0",
+    "fetch-mock": "^5.9.3",
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
-    "redux-logger": "^2.8.1"
+    "redux-logger": "^2.8.1",
+    "xhr-mock": "^1.7.0"
   }
 }

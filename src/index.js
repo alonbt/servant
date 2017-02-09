@@ -6,9 +6,10 @@ import ReactDOM from 'react-dom';
 import App from './components/Main';
 import servantApp from './reducers';
 import createLogger from 'redux-logger';
-
+import mock from 'xhr-mock';
 let store = createStore(servantApp, applyMiddleware(createLogger()));
-
+console.log('mock', mock);
+window['mock'] = mock;
 // Render the main component into the dom
 ReactDOM.render(
   <Provider store={store}>
