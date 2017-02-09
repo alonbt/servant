@@ -1,0 +1,2 @@
+!function(e){function t(o){if(r[o])return r[o].exports;var s=r[o]={exports:{},id:o,loaded:!1};return e[o].call(s.exports,s,s.exports,t),s.loaded=!0,s.exports}var r={};return t.m=e,t.c=r,t.p="/assets/",t(0)}([function(e,t){"use strict";console.log("this will be the background page")}]);
+//# sourceMappingURL=background.js.map

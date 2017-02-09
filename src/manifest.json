@@ -11,13 +11,13 @@
     "default_title": "Click here!"
   },
   "background": {
-    "scripts": ["backgroundPage.js"],
+    "scripts": ["assets/background.js"],
     "persistent": false
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["documentStartScripts.js"],
+      "js": ["assets/start.js"],
       "run_at": "document_start"
     }
   ],

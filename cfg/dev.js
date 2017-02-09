@@ -9,11 +9,16 @@ let defaultSettings = require('./defaults');
 let BowerWebpackPlugin = require('bower-webpack-plugin');
 
 let config = Object.assign({}, baseConfig, {
-  entry: [
+  entry: {
+    index: [
     'webpack-dev-server/client?http://127.0.0.1:' + defaultSettings.port,
     'webpack/hot/only-dev-server',
     './src/index'
   ],
+    popup: ['./src/popup'],
+    background: ['./src/background'],
+    start: ['./src/start']
+  },
   cache: true,
   devtool: 'eval-source-map',
   plugins: [

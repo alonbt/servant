@@ -1,0 +1,2 @@
+!function(o){function t(r){if(e[r])return e[r].exports;var s=e[r]={exports:{},id:r,loaded:!1};return o[r].call(s.exports,s,s.exports,t),s.loaded=!0,s.exports}var e={};return t.m=o,t.c=e,t.p="/assets/",t(0)}([function(o,t){"use strict";console.log("I run at the start of each document"),console.log("localStorage is ",localStorage)}]);
+//# sourceMappingURL=start.js.map
